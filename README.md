@@ -5,7 +5,7 @@ This Kafka Connect app is a Sink Connector for reading data from a Kafka topic a
 # Pre-requisties
 
 This connector works using Azure Service Principal authentication therefore requires you to have an active Azure App Registration done. 
-From the registered App, you can get the App ID, Client Secret key and from the Azure Active Directory properties, you can get the Directory ID.
+From the registered App, you can get the App ID, Client Secret key and from the Azure Active Directory properties, you can get the Directory ID.  
 These properties are required for the Sink config.
 
 
@@ -13,8 +13,8 @@ These properties are required for the Sink config.
 
 ## ADLSSinkConnector
 
-The connector will read from a topic and write to the specified ADLS Gen 1 Directory. The default file rotation pattern is hourly.
-The directory structure is: //<specified dir path>//<topic name>//<current date>//<curr hour>//file 
+The connector will read from a topic and write to the specified ADLS Gen 1 Directory. The default file rotation pattern is hourly.  
+The directory structure is: ```/<specified dir path>/<topic name>/<current date>/<curr hour>/file ```  
 This writing pattern can be easily extended as needed. 
 
 ```properties
@@ -47,6 +47,7 @@ mvn clean package
 ./bin/start.sh
 ```
 ## Starting a ADLS Sink
-
+```
 cd config
 curl -X POST -d @adls-sink-config.json  http://localhost:port/connectors --header "content-Type:application/json"
+```
