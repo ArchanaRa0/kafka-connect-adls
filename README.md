@@ -1,4 +1,4 @@
-# Overview
+# Kafka Connect ADLS Sink Connector Overview
 
 This Kafka Connect app is a Sink Connector for reading data from a Kafka topic and writing concurrently to Azure Data Lake Store Gen 1.
 
