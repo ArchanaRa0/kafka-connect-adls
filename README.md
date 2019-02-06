@@ -14,8 +14,8 @@ These properties are required for the Sink config.
 ## ADLSSinkConnector
 
 The connector will read from a topic and write to the specified ADLS Gen 1 Directory. The default file rotation pattern is hourly.
-The directory structure is: /<specified dir path>/<topic name>/<current date>/<curr hour>/file 
-This writing pattern can be extended as needed. 
+The directory structure is: //<specified dir path>//<topic name>//<current date>//<curr hour>//file 
+This writing pattern can be easily extended as needed. 
 
 ```properties
 name=adls-sink-connector1

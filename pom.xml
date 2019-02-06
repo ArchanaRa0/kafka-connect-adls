@@ -8,7 +8,7 @@
 	<properties>
 		<kafka.version>1.1.1</kafka.version>
 		<confluent.version>5.1.0</confluent.version>
-<jackson.version>2.6.3</jackson.version>
+		<jackson.version>2.8.11.1</jackson.version>
 	</properties>
 
 	<dependencies>
@@ -18,11 +18,11 @@
 			<version>2.3.1</version>
 		</dependency>
 		<dependency>
-	      <groupId>com.fasterxml.jackson.core</groupId>
-	      <artifactId>jackson-databind</artifactId>
-	      <version>${jackson.version}</version>
-	      <scope>compile</scope>
-    	</dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+			<scope>compile</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>connect-api</artifactId>
@@ -36,31 +36,6 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-connect-storage-common</artifactId>
-			<version>${confluent.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-connect-storage-core</artifactId>
-			<version>${confluent.version}</version>
-		</dependency>
-<!-- 		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-connect-storage-format</artifactId>
-			<version>${confluent.version}</version>
-		</dependency> -->
-		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-connect-storage-partitioner</artifactId>
-			<version>${confluent.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.confluent</groupId>
-			<artifactId>kafka-connect-storage-wal</artifactId>
-			<version>${confluent.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.google.collections</groupId>
 			<artifactId>google-collections</artifactId>
 			<version>1.0</version>
@@ -68,7 +43,7 @@
 
 	</dependencies>
 
-<build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -89,7 +64,7 @@
 					</execution>
 				</executions>
 			</plugin>
-		
+
 			<plugin>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.0.2</version>
@@ -169,7 +144,7 @@
 				<directory>config</directory>
 			</resource>
 		</resources>
-  </build>
-	
+	</build>
+
 
 </project>
