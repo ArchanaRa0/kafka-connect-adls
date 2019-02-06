@@ -1,0 +1,16 @@
+{
+  "config": {
+    "connector.class":"com.toyota.ca.kafka.connect.adls.ADLSSinkConnector",
+    "tasks.max":"5",
+    "topics":"PROXY.ZSCALER",
+    "auth.token.endpoint":"https://login.microsoftonline.com/<directory ID/tenant id>/oauth2/token",
+    "account.fqdn":"xxx.azuredatalakestore.net",
+    "client.id":"<azure app id>",
+    "client.key":"<azure app client secret key>",
+    "adls.dir.path":"/LandingZoneV2",
+    "file.prefix":"part_file",
+    "auto.offset.reset":"latest",
+    "name":"adls-sink-app"
+  },
+  "name": "adls-sink-app"
+}
