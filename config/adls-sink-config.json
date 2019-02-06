@@ -1,8 +1,8 @@
 {
   "config": {
-    "connector.class":"com.toyota.ca.kafka.connect.adls.ADLSSinkConnector",
+    "connector.class":"com.github.arao.kafka.connect.adls.ADLSSinkConnector",
     "tasks.max":"5",
-    "topics":"PROXY.ZSCALER",
+    "topics":"topicname",
     "auth.token.endpoint":"https://login.microsoftonline.com/<directory ID/tenant id>/oauth2/token",
     "account.fqdn":"xxx.azuredatalakestore.net",
     "client.id":"<azure app id>",
